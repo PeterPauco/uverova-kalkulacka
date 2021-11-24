@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Úverova kalkulačka</title>
+  </head>
+  <body>
+    <div id="center-vsetko">
+      <form id="urokova-kalkulacka">
+        <div class="nadpis">
+        <h1>Úverova kalkulačka</h1>
+        </div>
+        <p></p>
+            <div class="uver">
+              Výška úveru <input class="input" id="uver" type="number" />
+             </div>
+            <div class="percento">
+                Úrok<input class="input" id="percento" type="number" />
+            </div>
+         <div class="mesiac">
+           Doba splácania           <input
+             class="input"
+             id="mesiac"
+             type="number"
+             placeholder="pocet mesiacov"
+           />
+         </div>
+         <div class="vypocitaj">
+           <button>Vypočítať</button>
+         </div>
+         <h2>Predpokladaný výpočet splátok, celkovej sumy a preplatenia</h1>
+        <div id="daco" class="tabulkovy-prehlad">
+          
+            <div id="splatka" class="splatka"><span id="splatkaEuro">€</span><p>Splatka</p></div>
+            <div id="navysenie" class="navysenie"><span id="navysenieEuro">€</span><p>Celkova suma</p></div> 
+            <div id="celkom" class="celkom"><span id="celkomEuro">€</span><p>Preplatenie </p></div>
+        </div>
+
+    </form>
+      
+      
+    
+    </div>
+       
+  </body>
+  <script src="app.js"></script>
+</html>
